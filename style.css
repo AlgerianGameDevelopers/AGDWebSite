@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #22b076;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+  color: white;
+  font-family: 'Circular', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+section {
+	position: relative;
+	z-index: 1;
+}
+
+/* Logo */
+
+.logo {
+	opacity: 0;
+	position: relative;
+	margin-left: -3.5rem;
+	margin-top: -8rem;
+	margin-bottom: .75rem;
+	font-size: 8px;
+}
+
+body.ready .logo {
+	opacity: 1;
+}
+
+.fireworks {
+  position: absolute;
+	top: 0;
+	left: 0;
+  width: 100%;
+  height: 100%;
+}
