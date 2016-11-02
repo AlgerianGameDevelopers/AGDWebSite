@@ -227,7 +227,7 @@ $getPwaOptions=get_pwa_setting_options();
     echo '<style type="text/css"> /* Protect WP-Admin Style*/';
     
     if(isset($getPwaOptions['pwa_logo_path']) && $getPwaOptions['pwa_logo_path']!='')
-      echo ' h1 a { background-image:url('.$getPwaOptions['pwa_logo_path'].') !important; }';
+      echo ' h1 a { background-image:url('.$getPwaOptions['pwa_logo_path'].') !important; background-size:300px !important; width:300px !important; }';
       
     if(isset($getPwaOptions['pwa_login_page_bg_color']) && $getPwaOptions['pwa_login_page_bg_color']!='')
     echo ' body.login-action-login,html{ background:'.$getPwaOptions['pwa_login_page_bg_color'].' !important; height: 100% !important;}';
